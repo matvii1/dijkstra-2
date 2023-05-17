@@ -4,32 +4,13 @@
 ; Please see https://calva.io/output/ for more info.
 ; Happy coding! ♥️
 
-; Aborting connect, error determining connect sequence.
 ; Jacking in...
 ; Connecting using "Leiningen" project type.
 ; You can make Calva auto-select this.
 ;   - See https://calva.io/connect-sequences/
 ; 
 ; Starting Jack-in Terminal: pushd /Users/matvii_kharchenko/Desktop/PCU/ALDS/assignment2/dijkstra-2 ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-; Starting Jack-in Terminal: pushd /Users/matvii_kharchenko/Desktop/PCU/ALDS/assignment2/dijkstra-2 ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-; Starting Jack-in Terminal: pushd /Users/matvii_kharchenko/Desktop/PCU/ALDS/assignment2/dijkstra-2 ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-; Starting Jack-in Terminal: pushd /Users/matvii_kharchenko/Desktop/PCU/ALDS/assignment2/dijkstra-2 ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
-; Using host:port 127.0.0.1:55558 ...
+; Using host:port 127.0.0.1:62171 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; TIPS:
@@ -84,252 +65,2148 @@ clj꞉dijkstra-2.core꞉> 
 clj꞉dijkstra-2.core꞉> 
 #'dijkstra-2.core/dijsktra-weights
 clj꞉dijkstra-2.core꞉> 
-#'dijkstra-2.core/dijsktra-weights
-clj꞉dijkstra-2.core꞉> 
-{:label "Belfast",
- :lat 54.5964411,
- :lon -5.9302761,
- :neighbors
- #<Ref@d1fc140: 
-   ({:label "Derry", :weight 101}
-    {:label "Larne", :weight 30}
-    {:label "Newry", :weight 55}
-    {:label "Craigavon", :weight 35})>,
- :status #<Ref@475808e7: 0>,
- :distance #<Ref@201cb366: ##Inf>}
-clj꞉dijkstra-2.core꞉> 
-Neighbors count 4 false
-101
-Neighbors count 3 false
-30
-Neighbors count 2 false
-55
-Neighbors count 1 false
-35
-Neighbors count 0 true
--------———————————-- Craigavon
-Neighbors count 1 false
-35
-Neighbors count 0 true
--------———————————-- nil
-"There is no path"
-clj꞉dijkstra-2.core꞉> 
-#'dijkstra-2.core/dijsktra-weights
-clj꞉dijkstra-2.core꞉> 
-Neighbors count 4 false
-101
-Neighbors count 3 false
-30
-Neighbors count 2 false
-55
-Neighbors count 1 false
-35
-Neighbors count 0 true
------- Craigavon ------
-Neighbors count 1 false
-35
-Neighbors count 0 true
------- nil ------
-"There is no path"
-clj꞉dijkstra-2.core꞉> 
-#'dijkstra-2.core/find-best-neighbor
-clj꞉dijkstra-2.core꞉> 
-Neighbors count 4 false
-neighborWeight 101 
- 121 253
-Neighbors count 3 false
-neighborWeight 30 
- 192 182
-Neighbors count 2 false
-neighborWeight 55 
- 167 207
-Neighbors count 1 false
-neighborWeight 35 
- 187 187
-Neighbors count 0 true
------- Craigavon ------
-Neighbors count 1 false
-neighborWeight 35 
- 152 222
-Neighbors count 0 true
------- nil ------
-"There is no path"
-clj꞉dijkstra-2.core꞉> 
-#'dijkstra-2.core/find-best-neighbor
-clj꞉dijkstra-2.core꞉> 
-#'dijkstra-2.core/dijsktra-weights
-clj꞉dijkstra-2.core꞉> 
-Neighbors count 4 false
-neighborWeight 101 
- currentDistance - neighborWeight 121 
- currentNeighborDistance 253 
- currentLabel Derry
-Neighbors count 3 false
-neighborWeight 30 
- currentDistance - neighborWeight 192 
- currentNeighborDistance 182 
- currentLabel Larne
-Neighbors count 2 false
-neighborWeight 55 
- currentDistance - neighborWeight 167 
- currentNeighborDistance 207 
- currentLabel Newry
-Neighbors count 1 false
-neighborWeight 35 
- currentDistance - neighborWeight 187 
- currentNeighborDistance 187 
- currentLabel Craigavon
-Neighbors count 0 true
------- Craigavon ------
-Neighbors count 1 false
-neighborWeight 35 
- currentDistance - neighborWeight 152 
- currentNeighborDistance 222 
- currentLabel Belfast
-Neighbors count 0 true
------- nil ------
-"There is no path"
-clj꞉dijkstra-2.core꞉> 
-#'dijkstra-2.core/find-best-neighbor
-clj꞉dijkstra-2.core꞉> 
-#'dijkstra-2.core/dijsktra-weights
-clj꞉dijkstra-2.core꞉> 
-Neighbors count 4 false
-neighborWeight 101 
- currentDistance - neighborWeight 121 
- currentNeighborDistance 253 
- currentLabel Derry 
+neighborWeight 10 
+ currentDistance 2774 
+ currentDistance - neighborWeight 2764 
+ currentNeighborDistance 2764 
+ currentLabel X: E8 x E6 (0) 
 
  *********
-Neighbors count 3 false
-neighborWeight 30 
- currentDistance - neighborWeight 192 
- currentNeighborDistance 182 
- currentLabel Larne 
+neighborWeight 46 
+ currentDistance 2774 
+ currentDistance - neighborWeight 2728 
+ currentNeighborDistance 2820 
+ currentLabel Balsfjord 
 
  *********
-Neighbors count 2 false
-neighborWeight 55 
- currentDistance - neighborWeight 167 
- currentNeighborDistance 207 
- currentLabel Newry 
+------ closestNeighbor X: E8 x E6 (0) ------
+neighborWeight 134 
+ currentDistance 2764 
+ currentDistance - neighborWeight 2630 
+ currentNeighborDistance 2831 
+ currentLabel Alta (town) 
 
  *********
-Neighbors count 1 false
-neighborWeight 35 
- currentDistance - neighborWeight 187 
- currentNeighborDistance 187 
- currentLabel Craigavon 
+neighborWeight 97 
+ currentDistance 2764 
+ currentDistance - neighborWeight 2667 
+ currentNeighborDistance 2769 
+ currentLabel Setermoen 
 
  *********
-Neighbors count 0 true
------- Craigavon ------
-Neighbors count 1 false
-neighborWeight 35 
- currentDistance - neighborWeight 152 
- currentNeighborDistance 222 
- currentLabel Belfast 
+neighborWeight 41 
+ currentDistance 2764 
+ currentDistance - neighborWeight 2723 
+ currentNeighborDistance 2723 
+ currentLabel Kilpisjärvi 
 
  *********
-Neighbors count 0 true
------- nil ------
-"There is no path"
+neighborWeight 10 
+ currentDistance 2764 
+ currentDistance - neighborWeight 2754 
+ currentNeighborDistance 2774 
+ currentLabel Skibotn 
+
+ *********
+------ closestNeighbor Kilpisjärvi ------
+neighborWeight 103 
+ currentDistance 2723 
+ currentDistance - neighborWeight 2620 
+ currentNeighborDistance 2620 
+ currentLabel X: E8 x E45 (0) 
+
+ *********
+neighborWeight 41 
+ currentDistance 2723 
+ currentDistance - neighborWeight 2682 
+ currentNeighborDistance 2764 
+ currentLabel X: E8 x E6 (0) 
+
+ *********
+------ closestNeighbor X: E8 x E45 (0) ------
+neighborWeight 126 
+ currentDistance 2620 
+ currentDistance - neighborWeight 2494 
+ currentNeighborDistance 2494 
+ currentLabel X: E45 x E10 (0) 
+
+ *********
+neighborWeight 27 
+ currentDistance 2620 
+ currentDistance - neighborWeight 2593 
+ currentNeighborDistance 2647 
+ currentLabel Karesuvanto 
+
+ *********
+neighborWeight 121 
+ currentDistance 2620 
+ currentDistance - neighborWeight 2499 
+ currentNeighborDistance 2715 
+ currentLabel Kolari 
+
+ *********
+neighborWeight 103 
+ currentDistance 2620 
+ currentDistance - neighborWeight 2517 
+ currentNeighborDistance 2723 
+ currentLabel Kilpisjärvi 
+
+ *********
+------ closestNeighbor X: E45 x E10 (0) ------
+neighborWeight 126 
+ currentDistance 2494 
+ currentDistance - neighborWeight 2368 
+ currentNeighborDistance 2620 
+ currentLabel X: E8 x E45 (0) 
+
+ *********
+neighborWeight 161 
+ currentDistance 2494 
+ currentDistance - neighborWeight 2333 
+ currentNeighborDistance 2488 
+ currentLabel Töre 
+
+ *********
+neighborWeight 83 
+ currentDistance 2494 
+ currentDistance - neighborWeight 2411 
+ currentNeighborDistance 2577 
+ currentLabel Kiruna 
+
+ *********
+neighborWeight 191 
+ currentDistance 2494 
+ currentDistance - neighborWeight 2303 
+ currentNeighborDistance 2303 
+ currentLabel Arvidsjaur 
+
+ *********
+------ closestNeighbor Arvidsjaur ------
+neighborWeight 191 
+ currentDistance 2303 
+ currentDistance - neighborWeight 2112 
+ currentNeighborDistance 2494 
+ currentLabel X: E45 x E10 (0) 
+
+ *********
+neighborWeight 108 
+ currentDistance 2303 
+ currentDistance - neighborWeight 2195 
+ currentNeighborDistance 2195 
+ currentLabel X: E12 x E45 (0) 
+
+ *********
+------ closestNeighbor X: E12 x E45 (0) ------
+neighborWeight 230 
+ currentDistance 2195 
+ currentDistance - neighborWeight 1965 
+ currentNeighborDistance 1965 
+ currentLabel Östersund 
+
+ *********
+neighborWeight 108 
+ currentDistance 2195 
+ currentDistance - neighborWeight 2087 
+ currentNeighborDistance 2303 
+ currentLabel Arvidsjaur 
+
+ *********
+neighborWeight 179 
+ currentDistance 2195 
+ currentDistance - neighborWeight 2016 
+ currentNeighborDistance 2231 
+ currentLabel Umeå 
+
+ *********
+neighborWeight 235 
+ currentDistance 2195 
+ currentDistance - neighborWeight 1960 
+ currentNeighborDistance 2404 
+ currentLabel Mo i Rana 
+
+ *********
+------ closestNeighbor Östersund ------
+neighborWeight 230 
+ currentDistance 1965 
+ currentDistance - neighborWeight 1735 
+ currentNeighborDistance 2195 
+ currentLabel X: E12 x E45 (0) 
+
+ *********
+neighborWeight 125 
+ currentDistance 1965 
+ currentDistance - neighborWeight 1840 
+ currentNeighborDistance 1984 
+ currentLabel Sundsvall 
+
+ *********
+neighborWeight 225 
+ currentDistance 1965 
+ currentDistance - neighborWeight 1740 
+ currentNeighborDistance 2015 
+ currentLabel Trondheim 
+
+ *********
+neighborWeight 237 
+ currentDistance 1965 
+ currentDistance - neighborWeight 1728 
+ currentNeighborDistance 1728 
+ currentLabel Mora 
+
+ *********
+------ closestNeighbor Mora ------
+neighborWeight 60 
+ currentDistance 1728 
+ currentDistance - neighborWeight 1668 
+ currentNeighborDistance 1668 
+ currentLabel X: E16 x E45 (0) 
+
+ *********
+neighborWeight 237 
+ currentDistance 1728 
+ currentDistance - neighborWeight 1491 
+ currentNeighborDistance 1965 
+ currentLabel Östersund 
+
+ *********
+------ closestNeighbor X: E16 x E45 (0) ------
+neighborWeight 138 
+ currentDistance 1668 
+ currentDistance - neighborWeight 1530 
+ currentNeighborDistance 1530 
+ currentLabel X: E18 x E45 (0) 
+
+ *********
+neighborWeight 60 
+ currentDistance 1668 
+ currentDistance - neighborWeight 1608 
+ currentNeighborDistance 1728 
+ currentLabel Mora 
+
+ *********
+neighborWeight 78 
+ currentDistance 1668 
+ currentDistance - neighborWeight 1590 
+ currentNeighborDistance 1746 
+ currentLabel Borlänge 
+
+ *********
+neighborWeight 20 
+ currentDistance 1668 
+ currentDistance - neighborWeight 1648 
+ currentNeighborDistance 1688 
+ currentLabel Malung 
+
+ *********
+------ closestNeighbor X: E18 x E45 (0) ------
+neighborWeight 138 
+ currentDistance 1530 
+ currentDistance - neighborWeight 1392 
+ currentNeighborDistance 1668 
+ currentLabel X: E16 x E45 (0) 
+
+ *********
+neighborWeight 44 
+ currentDistance 1530 
+ currentDistance - neighborWeight 1486 
+ currentNeighborDistance 1486 
+ currentLabel Säffle 
+
+ *********
+neighborWeight 24 
+ currentDistance 1530 
+ currentDistance - neighborWeight 1506 
+ currentNeighborDistance 1554 
+ currentLabel Karlstad 
+
+ *********
+neighborWeight 116 
+ currentDistance 1530 
+ currentDistance - neighborWeight 1414 
+ currentNeighborDistance 1615 
+ currentLabel Askim 
+
+ *********
+------ closestNeighbor Säffle ------
+neighborWeight 127 
+ currentDistance 1486 
+ currentDistance - neighborWeight 1359 
+ currentNeighborDistance 1359 
+ currentLabel X: E45 x E20 (0) 
+
+ *********
+neighborWeight 44 
+ currentDistance 1486 
+ currentDistance - neighborWeight 1442 
+ currentNeighborDistance 1530 
+ currentLabel X: E18 x E45 (0) 
+
+ *********
+------ closestNeighbor X: E45 x E20 (0) ------
+neighborWeight 27 
+ currentDistance 1359 
+ currentDistance - neighborWeight 1332 
+ currentNeighborDistance 1342 
+ currentLabel X: E6 x E20 (0) 
+
+ *********
+neighborWeight 224 
+ currentDistance 1359 
+ currentDistance - neighborWeight 1135 
+ currentNeighborDistance 1583 
+ currentLabel Örebro 
+
+ *********
+neighborWeight 43 
+ currentDistance 1359 
+ currentDistance - neighborWeight 1316 
+ currentNeighborDistance 1316 
+ currentLabel Gothenburg 
+
+ *********
+neighborWeight 127 
+ currentDistance 1359 
+ currentDistance - neighborWeight 1232 
+ currentNeighborDistance 1486 
+ currentLabel Säffle 
+
+ *********
+------ closestNeighbor Gothenburg ------
+neighborWeight 43 
+ currentDistance 1316 
+ currentDistance - neighborWeight 1273 
+ currentNeighborDistance 1359 
+ currentLabel X: E45 x E20 (0) 
+
+ *********
+neighborWeight 26 
+ currentDistance 1316 
+ currentDistance - neighborWeight 1290 
+ currentNeighborDistance 1342 
+ currentLabel X: E6 x E20 (0) 
+
+ *********
+neighborWeight 25 
+ currentDistance 1316 
+ currentDistance - neighborWeight 1291 
+ currentNeighborDistance 1341 
+ currentLabel Skara 
+
+ *********
+neighborWeight 122 
+ currentDistance 1316 
+ currentDistance - neighborWeight 1194 
+ currentNeighborDistance 1194 
+ currentLabel Halmstad 
+
+ *********
+------ closestNeighbor Halmstad ------
+neighborWeight 122 
+ currentDistance 1194 
+ currentDistance - neighborWeight 1072 
+ currentNeighborDistance 1316 
+ currentLabel Gothenburg 
+
+ *********
+neighborWeight 65 
+ currentDistance 1194 
+ currentDistance - neighborWeight 1129 
+ currentNeighborDistance 1129 
+ currentLabel Helsingborg 
+
+ *********
+------ closestNeighbor Helsingborg ------
+neighborWeight 108 
+ currentDistance 1129 
+ currentDistance - neighborWeight 1021 
+ currentNeighborDistance 1237 
+ currentLabel Jönköping 
+
+ *********
+neighborWeight 65 
+ currentDistance 1129 
+ currentDistance - neighborWeight 1064 
+ currentNeighborDistance 1194 
+ currentLabel Halmstad 
+
+ *********
+neighborWeight 13 
+ currentDistance 1129 
+ currentDistance - neighborWeight 1116 
+ currentNeighborDistance 1116 
+ currentLabel Malmö 
+
+ *********
+------ closestNeighbor Malmö ------
+neighborWeight 145 
+ currentDistance 1116 
+ currentDistance - neighborWeight 971 
+ currentNeighborDistance 971 
+ currentLabel Copenhagen 
+
+ *********
+neighborWeight 154 
+ currentDistance 1116 
+ currentDistance - neighborWeight 962 
+ currentNeighborDistance 1270 
+ currentLabel Ystad 
+
+ *********
+neighborWeight 164 
+ currentDistance 1116 
+ currentDistance - neighborWeight 952 
+ currentNeighborDistance 1280 
+ currentLabel Trelleborg 
+
+ *********
+neighborWeight 155 
+ currentDistance 1116 
+ currentDistance - neighborWeight 961 
+ currentNeighborDistance 1271 
+ currentLabel Kalmar 
+
+ *********
+neighborWeight 13 
+ currentDistance 1116 
+ currentDistance - neighborWeight 1103 
+ currentNeighborDistance 1129 
+ currentLabel Helsingborg 
+
+ *********
+------ closestNeighbor Copenhagen ------
+neighborWeight 195 
+ currentDistance 971 
+ currentDistance - neighborWeight 776 
+ currentNeighborDistance 776 
+ currentLabel X: E45 x E20 (1) 
+
+ *********
+neighborWeight 145 
+ currentDistance 971 
+ currentDistance - neighborWeight 826 
+ currentNeighborDistance 1116 
+ currentLabel Malmö 
+
+ *********
+neighborWeight 40 
+ currentDistance 971 
+ currentDistance - neighborWeight 931 
+ currentNeighborDistance 1011 
+ currentLabel Helsingør 
+
+ *********
+neighborWeight 34 
+ currentDistance 971 
+ currentDistance - neighborWeight 937 
+ currentNeighborDistance 1005 
+ currentLabel Køge 
+
+ *********
+------ closestNeighbor X: E45 x E20 (1) ------
+neighborWeight 195 
+ currentDistance 776 
+ currentDistance - neighborWeight 581 
+ currentNeighborDistance 971 
+ currentLabel Copenhagen 
+
+ *********
+neighborWeight 66 
+ currentDistance 776 
+ currentDistance - neighborWeight 710 
+ currentNeighborDistance 842 
+ currentLabel Esbjerg 
+
+ *********
+neighborWeight 5 
+ currentDistance 776 
+ currentDistance - neighborWeight 771 
+ currentNeighborDistance 771 
+ currentLabel Kolding 
+
+ *********
+neighborWeight 21 
+ currentDistance 776 
+ currentDistance - neighborWeight 755 
+ currentNeighborDistance 797 
+ currentLabel Vejle 
+
+ *********
+------ closestNeighbor Kolding ------
+neighborWeight 5 
+ currentDistance 771 
+ currentDistance - neighborWeight 766 
+ currentNeighborDistance 776 
+ currentLabel X: E45 x E20 (1) 
+
+ *********
+neighborWeight 81 
+ currentDistance 771 
+ currentDistance - neighborWeight 690 
+ currentNeighborDistance 690 
+ currentLabel Flensburg 
+
+ *********
+------ closestNeighbor Flensburg ------
+neighborWeight 143 
+ currentDistance 690 
+ currentDistance - neighborWeight 547 
+ currentNeighborDistance 547 
+ currentLabel Hamburg 
+
+ *********
+neighborWeight 81 
+ currentDistance 690 
+ currentDistance - neighborWeight 609 
+ currentNeighborDistance 771 
+ currentLabel Kolding 
+
+ *********
+------ closestNeighbor Hamburg ------
+neighborWeight 143 
+ currentDistance 547 
+ currentDistance - neighborWeight 404 
+ currentNeighborDistance 690 
+ currentLabel Flensburg 
+
+ *********
+neighborWeight 254 
+ currentDistance 547 
+ currentDistance - neighborWeight 293 
+ currentNeighborDistance 293 
+ currentLabel Berlin 
+
+ *********
+neighborWeight 132 
+ currentDistance 547 
+ currentDistance - neighborWeight 415 
+ currentNeighborDistance 467 
+ currentLabel Hanover 
+
+ *********
+neighborWeight 96 
+ currentDistance 547 
+ currentDistance - neighborWeight 451 
+ currentNeighborDistance 643 
+ currentLabel Bremen 
+
+ *********
+neighborWeight 53 
+ currentDistance 547 
+ currentDistance - neighborWeight 494 
+ currentNeighborDistance 590 
+ currentLabel Lübeck 
+
+ *********
+------ closestNeighbor Berlin ------
+neighborWeight 99 
+ currentDistance 293 
+ currentDistance - neighborWeight 194 
+ currentNeighborDistance 230 
+ currentLabel X: E51 x E49 (0) 
+
+ *********
+neighborWeight 337 
+ currentDistance 293 
+ currentDistance - neighborWeight -44 
+ currentNeighborDistance 310 
+ currentLabel X: E30 x E67 (0) 
+
+ *********
+neighborWeight 95 
+ currentDistance 293 
+ currentDistance - neighborWeight 198 
+ currentNeighborDistance 292 
+ currentLabel X: E30 x E49 (0) 
+
+ *********
+neighborWeight 195 
+ currentDistance 293 
+ currentDistance - neighborWeight 98 
+ currentNeighborDistance 488 
+ currentLabel Rostock 
+
+ *********
+neighborWeight 129 
+ currentDistance 293 
+ currentDistance - neighborWeight 164 
+ currentNeighborDistance 422 
+ currentLabel Szczecin 
+
+ *********
+neighborWeight 254 
+ currentDistance 293 
+ currentDistance - neighborWeight 39 
+ currentNeighborDistance 547 
+ currentLabel Hamburg 
+
+ *********
+neighborWeight 83 
+ currentDistance 293 
+ currentDistance - neighborWeight 210 
+ currentNeighborDistance 210 
+ currentLabel Lübbenau 
+
+ *********
+------ closestNeighbor Lübbenau ------
+neighborWeight 88 
+ currentDistance 210 
+ currentDistance - neighborWeight 122 
+ currentNeighborDistance 122 
+ currentLabel Dresden 
+
+ *********
+neighborWeight 83 
+ currentDistance 210 
+ currentDistance - neighborWeight 127 
+ currentNeighborDistance 293 
+ currentLabel Berlin 
+
+ *********
+neighborWeight 36 
+ currentDistance 210 
+ currentDistance - neighborWeight 174 
+ currentNeighborDistance 246 
+ currentLabel Cottbus 
+
+ *********
+------ closestNeighbor Dresden ------
+neighborWeight 7 
+ currentDistance 122 
+ currentDistance - neighborWeight 115 
+ currentNeighborDistance 129 
+ currentLabel X: E40 x E49 (0) 
+
+ *********
+neighborWeight 88 
+ currentDistance 122 
+ currentDistance - neighborWeight 34 
+ currentNeighborDistance 210 
+ currentLabel Lübbenau 
+
+ *********
+neighborWeight 90 
+ currentDistance 122 
+ currentDistance - neighborWeight 32 
+ currentNeighborDistance 212 
+ currentLabel Görlitz 
+
+ *********
+neighborWeight 52 
+ currentDistance 122 
+ currentDistance - neighborWeight 70 
+ currentNeighborDistance 70 
+ currentLabel Ústí nad Labem 
+
+ *********
+------ closestNeighbor Ústí nad Labem ------
+neighborWeight 70 
+ currentDistance 70 
+ currentDistance - neighborWeight 0 
+ currentNeighborDistance 0 
+ currentLabel Prague 
+
+ *********
+neighborWeight 52 
+ currentDistance 70 
+ currentDistance - neighborWeight 18 
+ currentNeighborDistance 122 
+ currentLabel Dresden 
+
+ *********
+------ closestNeighbor Prague ------
+Skibotn
+X: E8 x E6 (0)
+Kilpisjärvi
+X: E8 x E45 (0)
+X: E45 x E10 (0)
+Arvidsjaur
+X: E12 x E45 (0)
+Östersund
+Mora
+X: E16 x E45 (0)
+X: E18 x E45 (0)
+Säffle
+X: E45 x E20 (0)
+Gothenburg
+Halmstad
+Helsingborg
+Malmö
+Copenhagen
+X: E45 x E20 (1)
+Kolding
+Flensburg
+Hamburg
+Berlin
+Lübbenau
+Dresden
+Ústí nad Labem
+Prague
+nil
 clj꞉dijkstra-2.core꞉> 
-#'dijkstra-2.core/dijsktra-weights
-clj꞉dijkstra-2.core꞉> 
-Neighbors count 4 false
-neighborWeight 101 
- currentDistance - neighborWeight 121 
- currentNeighborDistance 253 
- currentLabel Derry 
+neighborWeight 66 
+ currentDistance 7124 
+ currentDistance - neighborWeight 7058 
+ currentNeighborDistance 7190 
+ currentLabel Ridder, Kazakhstan 
 
  *********
-Neighbors count 3 false
-neighborWeight 30 
- currentDistance - neighborWeight 192 
- currentNeighborDistance 182 
- currentLabel Larne 
+neighborWeight 778 
+ currentDistance 7124 
+ currentDistance - neighborWeight 6346 
+ currentNeighborDistance 6346 
+ currentLabel Georgiyevka 
 
  *********
-Neighbors count 2 false
-neighborWeight 55 
- currentDistance - neighborWeight 167 
- currentNeighborDistance 207 
- currentLabel Newry 
+------ closestNeighbor Georgiyevka ------
+neighborWeight 1030 
+ currentDistance 6346 
+ currentDistance - neighborWeight 5316 
+ currentNeighborDistance 6886 
+ currentLabel Ayagoz 
 
  *********
-Neighbors count 1 false
-neighborWeight 35 
- currentDistance - neighborWeight 187 
- currentNeighborDistance 187 
- currentLabel Craigavon 
+neighborWeight 778 
+ currentDistance 6346 
+ currentDistance - neighborWeight 5568 
+ currentNeighborDistance 5568 
+ currentLabel Semey 
 
  *********
-Neighbors count 0 true
------- closestNeighbor Craigavon ------
-Neighbors count 1 false
-neighborWeight 35 
- currentDistance - neighborWeight 152 
- currentNeighborDistance 222 
- currentLabel Belfast 
+neighborWeight 778 
+ currentDistance 6346 
+ currentDistance - neighborWeight 5568 
+ currentNeighborDistance 7124 
+ currentLabel Oskemen 
 
  *********
-Neighbors count 0 true
+------ closestNeighbor Semey ------
+neighborWeight 778 
+ currentDistance 5568 
+ currentDistance - neighborWeight 4790 
+ currentNeighborDistance 6346 
+ currentLabel Georgiyevka 
+
+ *********
+neighborWeight 298 
+ currentDistance 5568 
+ currentDistance - neighborWeight 5270 
+ currentNeighborDistance 5270 
+ currentLabel Pavlodar 
+
+ *********
+------ closestNeighbor Pavlodar ------
+neighborWeight 298 
+ currentDistance 5270 
+ currentDistance - neighborWeight 4972 
+ currentNeighborDistance 5568 
+ currentLabel Semey 
+
+ *********
+neighborWeight 391 
+ currentDistance 5270 
+ currentDistance - neighborWeight 4879 
+ currentNeighborDistance 4879 
+ currentLabel Omsk 
+
+ *********
+------ closestNeighbor Omsk ------
+neighborWeight 275 
+ currentDistance 4879 
+ currentDistance - neighborWeight 4604 
+ currentNeighborDistance 4604 
+ currentLabel Ishim, Tyumen Oblast 
+
+ *********
+neighborWeight 391 
+ currentDistance 4879 
+ currentDistance - neighborWeight 4488 
+ currentNeighborDistance 5270 
+ currentLabel Pavlodar 
+
+ *********
+------ closestNeighbor Ishim, Tyumen Oblast ------
+neighborWeight 275 
+ currentDistance 4604 
+ currentDistance - neighborWeight 4329 
+ currentNeighborDistance 4879 
+ currentLabel Omsk 
+
+ *********
+neighborWeight 569 
+ currentDistance 4604 
+ currentDistance - neighborWeight 4035 
+ currentNeighborDistance 5173 
+ currentLabel Nur-Sultan 
+
+ *********
+neighborWeight 271 
+ currentDistance 4604 
+ currentDistance - neighborWeight 4333 
+ currentNeighborDistance 4333 
+ currentLabel Kurgan, Kurgan Oblast 
+
+ *********
+------ closestNeighbor Kurgan, Kurgan Oblast ------
+neighborWeight 271 
+ currentDistance 4333 
+ currentDistance - neighborWeight 4062 
+ currentNeighborDistance 4604 
+ currentLabel Ishim, Tyumen Oblast 
+
+ *********
+neighborWeight 255 
+ currentDistance 4333 
+ currentDistance - neighborWeight 4078 
+ currentNeighborDistance 4078 
+ currentLabel Chelyabinsk 
+
+ *********
+------ closestNeighbor Chelyabinsk ------
+neighborWeight 209 
+ currentDistance 4078 
+ currentDistance - neighborWeight 3869 
+ currentNeighborDistance 3869 
+ currentLabel Ufa 
+
+ *********
+neighborWeight 249 
+ currentDistance 4078 
+ currentDistance - neighborWeight 3829 
+ currentNeighborDistance 4327 
+ currentLabel Kostanay 
+
+ *********
+neighborWeight 255 
+ currentDistance 4078 
+ currentDistance - neighborWeight 3823 
+ currentNeighborDistance 4333 
+ currentLabel Kurgan, Kurgan Oblast 
+
+ *********
+------ closestNeighbor Ufa ------
+neighborWeight 364 
+ currentDistance 3869 
+ currentDistance - neighborWeight 3505 
+ currentNeighborDistance 3505 
+ currentLabel Samara, Russia 
+
+ *********
+neighborWeight 209 
+ currentDistance 3869 
+ currentDistance - neighborWeight 3660 
+ currentNeighborDistance 4078 
+ currentLabel Chelyabinsk 
+
+ *********
+------ closestNeighbor Samara, Russia ------
+neighborWeight 627 
+ currentDistance 3505 
+ currentDistance - neighborWeight 2878 
+ currentNeighborDistance 2878 
+ currentLabel X: E22 x E30 (0) 
+
+ *********
+neighborWeight 364 
+ currentDistance 3505 
+ currentDistance - neighborWeight 3141 
+ currentNeighborDistance 3869 
+ currentLabel Ufa 
+
+ *********
+neighborWeight 1017 
+ currentDistance 3505 
+ currentDistance - neighborWeight 2488 
+ currentNeighborDistance 3207 
+ currentLabel Oral, Kazakhstan 
+
+ *********
+------ closestNeighbor X: E22 x E30 (0) ------
+neighborWeight 627 
+ currentDistance 2878 
+ currentDistance - neighborWeight 2251 
+ currentNeighborDistance 3505 
+ currentLabel Samara, Russia 
+
+ *********
+neighborWeight 445 
+ currentDistance 2878 
+ currentDistance - neighborWeight 2433 
+ currentNeighborDistance 2615 
+ currentLabel Penza 
+
+ *********
+neighborWeight 112 
+ currentDistance 2878 
+ currentDistance - neighborWeight 2766 
+ currentNeighborDistance 2990 
+ currentLabel Yelabuga 
+
+ *********
+neighborWeight 75 
+ currentDistance 2878 
+ currentDistance - neighborWeight 2803 
+ currentNeighborDistance 2803 
+ currentLabel Kazan 
+
+ *********
+------ closestNeighbor Kazan ------
+neighborWeight 75 
+ currentDistance 2803 
+ currentDistance - neighborWeight 2728 
+ currentNeighborDistance 2878 
+ currentLabel X: E22 x E30 (0) 
+
+ *********
+neighborWeight 335 
+ currentDistance 2803 
+ currentDistance - neighborWeight 2468 
+ currentNeighborDistance 2468 
+ currentLabel Nizhny Novgorod 
+
+ *********
+------ closestNeighbor Nizhny Novgorod ------
+neighborWeight 335 
+ currentDistance 2468 
+ currentDistance - neighborWeight 2133 
+ currentNeighborDistance 2803 
+ currentLabel Kazan 
+
+ *********
+neighborWeight 210 
+ currentDistance 2468 
+ currentDistance - neighborWeight 2258 
+ currentNeighborDistance 2258 
+ currentLabel Vladimir, Russia 
+
+ *********
+------ closestNeighbor Vladimir, Russia ------
+neighborWeight 207 
+ currentDistance 2258 
+ currentDistance - neighborWeight 2051 
+ currentNeighborDistance 2051 
+ currentLabel Moscow 
+
+ *********
+neighborWeight 210 
+ currentDistance 2258 
+ currentDistance - neighborWeight 2048 
+ currentNeighborDistance 2468 
+ currentLabel Nizhny Novgorod 
+
+ *********
+------ closestNeighbor Moscow ------
+neighborWeight 648 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1403 
+ currentNeighborDistance 2022 
+ currentLabel Saint Petersburg 
+
+ *********
+neighborWeight 434 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1617 
+ currentNeighborDistance 1890 
+ currentLabel Velikiye Luki 
+
+ *********
+neighborWeight 207 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1844 
+ currentNeighborDistance 2258 
+ currentLabel Vladimir, Russia 
+
+ *********
+neighborWeight 367 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1684 
+ currentNeighborDistance 2044 
+ currentLabel Voronezh 
+
+ *********
+neighborWeight 182 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1869 
+ currentNeighborDistance 2233 
+ currentLabel Ryazan 
+
+ *********
+neighborWeight 407 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1644 
+ currentNeighborDistance 2458 
+ currentLabel Tambov 
+
+ *********
+neighborWeight 287 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1764 
+ currentNeighborDistance 2338 
+ currentLabel Yaroslavl 
+
+ *********
+neighborWeight 145 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1906 
+ currentNeighborDistance 2104 
+ currentLabel Tula, Russia 
+
+ *********
+neighborWeight 345 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1706 
+ currentNeighborDistance 1706 
+ currentLabel Smolensk 
+
+ *********
+neighborWeight 128 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1923 
+ currentNeighborDistance 2009 
+ currentLabel Kaluga 
+
+ *********
+------ closestNeighbor Smolensk ------
+neighborWeight 137 
+ currentDistance 1706 
+ currentDistance - neighborWeight 1569 
+ currentNeighborDistance 1569 
+ currentLabel X: E30 x E95 (0) 
+
+ *********
+neighborWeight 345 
+ currentDistance 1706 
+ currentDistance - neighborWeight 1361 
+ currentNeighborDistance 2051 
+ currentLabel Moscow 
+
+ *********
+------ closestNeighbor X: E30 x E95 (0) ------
+neighborWeight 235 
+ currentDistance 1569 
+ currentDistance - neighborWeight 1334 
+ currentNeighborDistance 1796 
+ currentLabel X: E22 x E95 (0) 
+
+ *********
+neighborWeight 229 
+ currentDistance 1569 
+ currentDistance - neighborWeight 1340 
+ currentNeighborDistance 1590 
+ currentLabel Gomel 
+
+ *********
+neighborWeight 137 
+ currentDistance 1569 
+ currentDistance - neighborWeight 1432 
+ currentNeighborDistance 1706 
+ currentLabel Smolensk 
+
+ *********
+neighborWeight 172 
+ currentDistance 1569 
+ currentDistance - neighborWeight 1397 
+ currentNeighborDistance 1397 
+ currentLabel Minsk 
+
+ *********
+------ closestNeighbor Minsk ------
+neighborWeight 172 
+ currentDistance 1397 
+ currentDistance - neighborWeight 1225 
+ currentNeighborDistance 1569 
+ currentLabel X: E30 x E95 (0) 
+
+ *********
+neighborWeight 150 
+ currentDistance 1397 
+ currentDistance - neighborWeight 1247 
+ currentNeighborDistance 1247 
+ currentLabel X: E85 x E30 (0) 
+
+ *********
+neighborWeight 169 
+ currentDistance 1397 
+ currentDistance - neighborWeight 1228 
+ currentNeighborDistance 1332 
+ currentLabel Vilnius 
+
+ *********
+------ closestNeighbor X: E85 x E30 (0) ------
+neighborWeight 150 
+ currentDistance 1247 
+ currentDistance - neighborWeight 1097 
+ currentNeighborDistance 1397 
+ currentLabel Minsk 
+
+ *********
+neighborWeight 98 
+ currentDistance 1247 
+ currentDistance - neighborWeight 1149 
+ currentNeighborDistance 1149 
+ currentLabel Brest, Belarus 
+
+ *********
+neighborWeight 74 
+ currentDistance 1247 
+ currentDistance - neighborWeight 1173 
+ currentNeighborDistance 1321 
+ currentLabel Slonim 
+
+ *********
+neighborWeight 17 
+ currentDistance 1247 
+ currentDistance - neighborWeight 1230 
+ currentNeighborDistance 1264 
+ currentLabel Lida 
+
+ *********
+------ closestNeighbor Brest, Belarus ------
+neighborWeight 98 
+ currentDistance 1149 
+ currentDistance - neighborWeight 1051 
+ currentNeighborDistance 1247 
+ currentLabel X: E85 x E30 (0) 
+
+ *********
+neighborWeight 245 
+ currentDistance 1149 
+ currentDistance - neighborWeight 904 
+ currentNeighborDistance 850 
+ currentLabel Warsaw 
+
+ *********
 ------ closestNeighbor nil ------
 "There is no path"
 clj꞉dijkstra-2.core꞉> 
-#'dijkstra-2.core/find-best-neighbor
-clj꞉dijkstra-2.core꞉> 
 neighborWeight 101 
- currentDistance - neighborWeight 121 
- currentNeighborDistance 253 
+ currentDistance ##Inf 
+ currentDistance - neighborWeight ##Inf 
+ currentNeighborDistance ##Inf 
  currentLabel Derry 
 
  *********
 neighborWeight 30 
- currentDistance - neighborWeight 192 
- currentNeighborDistance 182 
+ currentDistance ##Inf 
+ currentDistance - neighborWeight ##Inf 
+ currentNeighborDistance ##Inf 
  currentLabel Larne 
 
  *********
 neighborWeight 55 
- currentDistance - neighborWeight 167 
- currentNeighborDistance 207 
+ currentDistance ##Inf 
+ currentDistance - neighborWeight ##Inf 
+ currentNeighborDistance ##Inf 
  currentLabel Newry 
 
  *********
 neighborWeight 35 
- currentDistance - neighborWeight 187 
- currentNeighborDistance 187 
+ currentDistance ##Inf 
+ currentDistance - neighborWeight ##Inf 
+ currentNeighborDistance ##Inf 
  currentLabel Craigavon 
-
- *********
------- closestNeighbor Craigavon ------
-neighborWeight 35
- currentDistance - neighborWeight 152 
- currentNeighborDistance 222 
- currentLabel Belfast 
 
  *********
 ------ closestNeighbor nil ------
 "There is no path"
 clj꞉dijkstra-2.core꞉> 
-{:label "Craigavon",
- :lat 54.4507201,
- :lon -6.3921622,
- :neighbors #<Ref@3981b9a4: ({:label "Belfast", :weight 35})>,
- :status #<Ref@75c26502: 3>,
- :distance #<Ref@27a548b6: 187>}
+neighborWeight 101 
+ currentDistance ##Inf 
+ currentDistance - neighborWeight ##Inf 
+ currentNeighborDistance ##Inf 
+ currentLabel Derry 
+
+ *********
+neighborWeight 30 
+ currentDistance ##Inf 
+ currentDistance - neighborWeight ##Inf 
+ currentNeighborDistance ##Inf 
+ currentLabel Larne 
+
+ *********
+neighborWeight 55 
+ currentDistance ##Inf 
+ currentDistance - neighborWeight ##Inf 
+ currentNeighborDistance ##Inf 
+ currentLabel Newry 
+
+ *********
+neighborWeight 35 
+ currentDistance ##Inf 
+ currentDistance - neighborWeight ##Inf 
+ currentNeighborDistance ##Inf 
+ currentLabel Craigavon 
+
+ *********
+------ closestNeighbor nil ------
+"There is no path"
 clj꞉dijkstra-2.core꞉> 
-{:label "Belfast",
- :lat 54.5964411,
- :lon -5.9302761,
+neighborWeight 66 
+ currentDistance 7124 
+ currentDistance - neighborWeight 7058 
+ currentNeighborDistance 7190 
+ currentLabel Ridder, Kazakhstan 
+
+ *********
+neighborWeight 778 
+ currentDistance 7124 
+ currentDistance - neighborWeight 6346 
+ currentNeighborDistance 6346 
+ currentLabel Georgiyevka 
+
+ *********
+------ closestNeighbor Georgiyevka ------
+neighborWeight 1030 
+ currentDistance 6346 
+ currentDistance - neighborWeight 5316 
+ currentNeighborDistance 6886 
+ currentLabel Ayagoz 
+
+ *********
+neighborWeight 778 
+ currentDistance 6346 
+ currentDistance - neighborWeight 5568 
+ currentNeighborDistance 5568 
+ currentLabel Semey 
+
+ *********
+neighborWeight 778 
+ currentDistance 6346 
+ currentDistance - neighborWeight 5568 
+ currentNeighborDistance 7124 
+ currentLabel Oskemen 
+
+ *********
+------ closestNeighbor Semey ------
+neighborWeight 778 
+ currentDistance 5568 
+ currentDistance - neighborWeight 4790 
+ currentNeighborDistance 6346 
+ currentLabel Georgiyevka 
+
+ *********
+neighborWeight 298 
+ currentDistance 5568 
+ currentDistance - neighborWeight 5270 
+ currentNeighborDistance 5270 
+ currentLabel Pavlodar 
+
+ *********
+------ closestNeighbor Pavlodar ------
+neighborWeight 298 
+ currentDistance 5270 
+ currentDistance - neighborWeight 4972 
+ currentNeighborDistance 5568 
+ currentLabel Semey 
+
+ *********
+neighborWeight 391 
+ currentDistance 5270 
+ currentDistance - neighborWeight 4879 
+ currentNeighborDistance 4879 
+ currentLabel Omsk 
+
+ *********
+------ closestNeighbor Omsk ------
+neighborWeight 275 
+ currentDistance 4879 
+ currentDistance - neighborWeight 4604 
+ currentNeighborDistance 4604 
+ currentLabel Ishim, Tyumen Oblast 
+
+ *********
+neighborWeight 391 
+ currentDistance 4879 
+ currentDistance - neighborWeight 4488 
+ currentNeighborDistance 5270 
+ currentLabel Pavlodar 
+
+ *********
+------ closestNeighbor Ishim, Tyumen Oblast ------
+neighborWeight 275 
+ currentDistance 4604 
+ currentDistance - neighborWeight 4329 
+ currentNeighborDistance 4879 
+ currentLabel Omsk 
+
+ *********
+neighborWeight 569 
+ currentDistance 4604 
+ currentDistance - neighborWeight 4035 
+ currentNeighborDistance 5173 
+ currentLabel Nur-Sultan 
+
+ *********
+neighborWeight 271 
+ currentDistance 4604 
+ currentDistance - neighborWeight 4333 
+ currentNeighborDistance 4333 
+ currentLabel Kurgan, Kurgan Oblast 
+
+ *********
+------ closestNeighbor Kurgan, Kurgan Oblast ------
+neighborWeight 271 
+ currentDistance 4333 
+ currentDistance - neighborWeight 4062 
+ currentNeighborDistance 4604 
+ currentLabel Ishim, Tyumen Oblast 
+
+ *********
+neighborWeight 255 
+ currentDistance 4333 
+ currentDistance - neighborWeight 4078 
+ currentNeighborDistance 4078 
+ currentLabel Chelyabinsk 
+
+ *********
+------ closestNeighbor Chelyabinsk ------
+neighborWeight 209 
+ currentDistance 4078 
+ currentDistance - neighborWeight 3869 
+ currentNeighborDistance 3869 
+ currentLabel Ufa 
+
+ *********
+neighborWeight 249 
+ currentDistance 4078 
+ currentDistance - neighborWeight 3829 
+ currentNeighborDistance 4327 
+ currentLabel Kostanay 
+
+ *********
+neighborWeight 255 
+ currentDistance 4078 
+ currentDistance - neighborWeight 3823 
+ currentNeighborDistance 4333 
+ currentLabel Kurgan, Kurgan Oblast 
+
+ *********
+------ closestNeighbor Ufa ------
+neighborWeight 364 
+ currentDistance 3869 
+ currentDistance - neighborWeight 3505 
+ currentNeighborDistance 3505 
+ currentLabel Samara, Russia 
+
+ *********
+neighborWeight 209 
+ currentDistance 3869 
+ currentDistance - neighborWeight 3660 
+ currentNeighborDistance 4078 
+ currentLabel Chelyabinsk 
+
+ *********
+------ closestNeighbor Samara, Russia ------
+neighborWeight 627 
+ currentDistance 3505 
+ currentDistance - neighborWeight 2878 
+ currentNeighborDistance 2878 
+ currentLabel X: E22 x E30 (0) 
+
+ *********
+neighborWeight 364 
+ currentDistance 3505 
+ currentDistance - neighborWeight 3141 
+ currentNeighborDistance 3869 
+ currentLabel Ufa 
+
+ *********
+neighborWeight 1017 
+ currentDistance 3505 
+ currentDistance - neighborWeight 2488 
+ currentNeighborDistance 3207 
+ currentLabel Oral, Kazakhstan 
+
+ *********
+------ closestNeighbor X: E22 x E30 (0) ------
+neighborWeight 627 
+ currentDistance 2878 
+ currentDistance - neighborWeight 2251 
+ currentNeighborDistance 3505 
+ currentLabel Samara, Russia 
+
+ *********
+neighborWeight 445 
+ currentDistance 2878 
+ currentDistance - neighborWeight 2433 
+ currentNeighborDistance 2615 
+ currentLabel Penza 
+
+ *********
+neighborWeight 112 
+ currentDistance 2878 
+ currentDistance - neighborWeight 2766 
+ currentNeighborDistance 2990 
+ currentLabel Yelabuga 
+
+ *********
+neighborWeight 75 
+ currentDistance 2878 
+ currentDistance - neighborWeight 2803 
+ currentNeighborDistance 2803 
+ currentLabel Kazan 
+
+ *********
+------ closestNeighbor Kazan ------
+neighborWeight 75 
+ currentDistance 2803 
+ currentDistance - neighborWeight 2728 
+ currentNeighborDistance 2878 
+ currentLabel X: E22 x E30 (0) 
+
+ *********
+neighborWeight 335 
+ currentDistance 2803 
+ currentDistance - neighborWeight 2468 
+ currentNeighborDistance 2468 
+ currentLabel Nizhny Novgorod 
+
+ *********
+------ closestNeighbor Nizhny Novgorod ------
+neighborWeight 335 
+ currentDistance 2468 
+ currentDistance - neighborWeight 2133 
+ currentNeighborDistance 2803 
+ currentLabel Kazan 
+
+ *********
+neighborWeight 210 
+ currentDistance 2468 
+ currentDistance - neighborWeight 2258 
+ currentNeighborDistance 2258 
+ currentLabel Vladimir, Russia 
+
+ *********
+------ closestNeighbor Vladimir, Russia ------
+neighborWeight 207 
+ currentDistance 2258 
+ currentDistance - neighborWeight 2051 
+ currentNeighborDistance 2051 
+ currentLabel Moscow 
+
+ *********
+neighborWeight 210 
+ currentDistance 2258 
+ currentDistance - neighborWeight 2048 
+ currentNeighborDistance 2468 
+ currentLabel Nizhny Novgorod 
+
+ *********
+------ closestNeighbor Moscow ------
+neighborWeight 648 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1403 
+ currentNeighborDistance 2022 
+ currentLabel Saint Petersburg 
+
+ *********
+neighborWeight 434 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1617 
+ currentNeighborDistance 1890 
+ currentLabel Velikiye Luki 
+
+ *********
+neighborWeight 207 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1844 
+ currentNeighborDistance 2258 
+ currentLabel Vladimir, Russia 
+
+ *********
+neighborWeight 367 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1684 
+ currentNeighborDistance 2044 
+ currentLabel Voronezh 
+
+ *********
+neighborWeight 182 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1869 
+ currentNeighborDistance 2233 
+ currentLabel Ryazan 
+
+ *********
+neighborWeight 407 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1644 
+ currentNeighborDistance 2458 
+ currentLabel Tambov 
+
+ *********
+neighborWeight 287 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1764 
+ currentNeighborDistance 2338 
+ currentLabel Yaroslavl 
+
+ *********
+neighborWeight 145 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1906 
+ currentNeighborDistance 2104 
+ currentLabel Tula, Russia 
+
+ *********
+neighborWeight 345 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1706 
+ currentNeighborDistance 1706 
+ currentLabel Smolensk 
+
+ *********
+neighborWeight 128 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1923 
+ currentNeighborDistance 2009 
+ currentLabel Kaluga 
+
+ *********
+------ closestNeighbor Smolensk ------
+neighborWeight 137 
+ currentDistance 1706 
+ currentDistance - neighborWeight 1569 
+ currentNeighborDistance 1569 
+ currentLabel X: E30 x E95 (0) 
+
+ *********
+neighborWeight 345 
+ currentDistance 1706 
+ currentDistance - neighborWeight 1361 
+ currentNeighborDistance 2051 
+ currentLabel Moscow 
+
+ *********
+------ closestNeighbor X: E30 x E95 (0) ------
+neighborWeight 235 
+ currentDistance 1569 
+ currentDistance - neighborWeight 1334 
+ currentNeighborDistance 1796 
+ currentLabel X: E22 x E95 (0) 
+
+ *********
+neighborWeight 229 
+ currentDistance 1569 
+ currentDistance - neighborWeight 1340 
+ currentNeighborDistance 1590 
+ currentLabel Gomel 
+
+ *********
+neighborWeight 137 
+ currentDistance 1569 
+ currentDistance - neighborWeight 1432 
+ currentNeighborDistance 1706 
+ currentLabel Smolensk 
+
+ *********
+neighborWeight 172 
+ currentDistance 1569 
+ currentDistance - neighborWeight 1397 
+ currentNeighborDistance 1397 
+ currentLabel Minsk 
+
+ *********
+------ closestNeighbor Minsk ------
+neighborWeight 172 
+ currentDistance 1397 
+ currentDistance - neighborWeight 1225 
+ currentNeighborDistance 1569 
+ currentLabel X: E30 x E95 (0) 
+
+ *********
+neighborWeight 150 
+ currentDistance 1397 
+ currentDistance - neighborWeight 1247 
+ currentNeighborDistance 1247 
+ currentLabel X: E85 x E30 (0) 
+
+ *********
+neighborWeight 169 
+ currentDistance 1397 
+ currentDistance - neighborWeight 1228 
+ currentNeighborDistance 1332 
+ currentLabel Vilnius 
+
+ *********
+------ closestNeighbor X: E85 x E30 (0) ------
+neighborWeight 150 
+ currentDistance 1247 
+ currentDistance - neighborWeight 1097 
+ currentNeighborDistance 1397 
+ currentLabel Minsk 
+
+ *********
+neighborWeight 98 
+ currentDistance 1247 
+ currentDistance - neighborWeight 1149 
+ currentNeighborDistance 1149 
+ currentLabel Brest, Belarus 
+
+ *********
+neighborWeight 74 
+ currentDistance 1247 
+ currentDistance - neighborWeight 1173 
+ currentNeighborDistance 1321 
+ currentLabel Slonim 
+
+ *********
+neighborWeight 17 
+ currentDistance 1247 
+ currentDistance - neighborWeight 1230 
+ currentNeighborDistance 1264 
+ currentLabel Lida 
+
+ *********
+------ closestNeighbor Brest, Belarus ------
+neighborWeight 98 
+ currentDistance 1149 
+ currentDistance - neighborWeight 1051 
+ currentNeighborDistance 1247 
+ currentLabel X: E85 x E30 (0) 
+
+ *********
+neighborWeight 245 
+ currentDistance 1149 
+ currentDistance - neighborWeight 904 
+ currentNeighborDistance 850 
+ currentLabel Warsaw 
+
+ *********
+------ closestNeighbor nil ------
+"There is no path"
+clj꞉dijkstra-2.core꞉> 
+#'dijkstra-2.core/add-distance
+clj꞉dijkstra-2.core꞉> 
+neighborWeight 98 
+ currentDistance 1149 
+ currentDistance - neighborWeight 1051 
+ currentNeighborDistance 1247 
+ currentLabel X: E85 x E30 (0) 
+
+ *********
+neighborWeight 245 
+ currentDistance 1149 
+ currentDistance - neighborWeight 904 
+ currentNeighborDistance 850 
+ currentLabel Warsaw 
+
+ *********
+------ closestNeighbor nil ------
+"There is no path"
+clj꞉dijkstra-2.core꞉> 
+({:label "X: E25 x E27 (0)", :weight 19}
+ {:label "X: E60 x E27 (0)", :weight 36}
+ {:label "X: E62 x E21 (0)", :weight 11}
+ {:label "X: E21 x E25 (0)", :weight 7})
+clj꞉dijkstra-2.core꞉> 
+neighborWeight 98 
+ currentDistance 1149 
+ currentDistance - neighborWeight 1051 
+ currentNeighborDistance 1247 
+ currentLabel X: E85 x E30 (0) 
+
+ *********
+neighborWeight 245 
+ currentDistance 1149 
+ currentDistance - neighborWeight 904 
+ currentNeighborDistance 850 
+ currentLabel Warsaw 
+
+ *********
+------ closestNeighbor nil ------
+"There is no path"
+clj꞉dijkstra-2.core꞉> 
+{:label "Brest, Belarus",
+ :lat 53.6567045,
+ :lon 23.8410796,
+ :neighbors #<Ref@236f724a: ({:label "X: E85 x E30 (0)", :weight 98} {:label "Warsaw", :weight 245})>,
+ :status #<Ref@4077be73: 3>,
+ :distance #<Ref@43622ea6: 1149>}
+clj꞉dijkstra-2.core꞉> 
+{:label "Warsaw",
+ :lat 52.2337172,
+ :lon 21.07141112883227,
  :neighbors
- #<Ref@d1fc140: 
-   ({:label "Derry", :weight 101}
-    {:label "Larne", :weight 30}
-    {:label "Newry", :weight 55}
-    {:label "Craigavon", :weight 35})>,
- :status #<Ref@475808e7: 3>,
- :distance #<Ref@201cb366: 222>}
+ #<Ref@70c28d06: 
+   ({:label "X: E67 x E28 (0)", :weight 314}
+    {:label "X: E77 x E67 (0)", :weight 53}
+    {:label "Poznań", :weight 106}
+    {:label "Brest, Belarus", :weight 245}
+    {:label "Radom", :weight 92}
+    {:label "Elbląg", :weight 241})>,
+ :status #<Ref@65f7e4ec: 3>,
+ :distance #<Ref@365a35e9: 850>}
+clj꞉dijkstra-2.core꞉> 
+{:label "X: E85 x E30 (0)",
+ :lat 53.75329279292825,
+ :lon 25.304200568911554,
+ :neighbors
+ #<Ref@3927163e: 
+   ({:label "Minsk", :weight 150}
+    {:label "Brest, Belarus", :weight 98}
+    {:label "Slonim", :weight 74}
+    {:label "Lida", :weight 17})>,
+ :status #<Ref@43eb5afd: 3>,
+ :distance #<Ref@275fa311: 1247>}
+clj꞉dijkstra-2.core꞉> 
+1247
+clj꞉dijkstra-2.core꞉> 
+#'dijkstra-2.core/print-distance
+clj꞉dijkstra-2.core꞉> 
+Distance of  X: E85 x E30 (0) is  1247
+nil
+clj꞉dijkstra-2.core꞉> 
+#'dijkstra-2.core/print-distance
+clj꞉dijkstra-2.core꞉> 
+Distance of X: E85 x E30 (0) is  1247
+nil
+clj꞉dijkstra-2.core꞉> 
+{:label "X: E85 x E30 (0)",
+ :lat 53.75329279292825,
+ :lon 25.304200568911554,
+ :neighbors
+ #<Ref@3927163e: 
+   ({:label "Minsk", :weight 150}
+    {:label "Brest, Belarus", :weight 98}
+    {:label "Slonim", :weight 74}
+    {:label "Lida", :weight 17})>,
+ :status #<Ref@43eb5afd: 3>,
+ :distance #<Ref@275fa311: 1247>}
+clj꞉dijkstra-2.core꞉> 
+#'dijkstra-2.core/print-distance
+clj꞉dijkstra-2.core꞉> 
+neighborWeight 66 
+ currentDistance 7124 
+ currentDistance - neighborWeight 7058 
+ currentNeighborDistance 7190 
+ currentLabel Ridder, Kazakhstan 
+
+ *********
+neighborWeight 778 
+ currentDistance 7124 
+ currentDistance - neighborWeight 6346 
+ currentNeighborDistance 6346 
+ currentLabel Georgiyevka 
+
+ *********
+------ closestNeighbor Georgiyevka ------
+neighborWeight 1030 
+ currentDistance 6346 
+ currentDistance - neighborWeight 5316 
+ currentNeighborDistance 6886 
+ currentLabel Ayagoz 
+
+ *********
+neighborWeight 778 
+ currentDistance 6346 
+ currentDistance - neighborWeight 5568 
+ currentNeighborDistance 5568 
+ currentLabel Semey 
+
+ *********
+neighborWeight 778 
+ currentDistance 6346 
+ currentDistance - neighborWeight 5568 
+ currentNeighborDistance 7124 
+ currentLabel Oskemen 
+
+ *********
+------ closestNeighbor Semey ------
+neighborWeight 778 
+ currentDistance 5568 
+ currentDistance - neighborWeight 4790 
+ currentNeighborDistance 6346 
+ currentLabel Georgiyevka 
+
+ *********
+neighborWeight 298 
+ currentDistance 5568 
+ currentDistance - neighborWeight 5270 
+ currentNeighborDistance 5270 
+ currentLabel Pavlodar 
+
+ *********
+------ closestNeighbor Pavlodar ------
+neighborWeight 298 
+ currentDistance 5270 
+ currentDistance - neighborWeight 4972 
+ currentNeighborDistance 5568 
+ currentLabel Semey 
+
+ *********
+neighborWeight 391 
+ currentDistance 5270 
+ currentDistance - neighborWeight 4879 
+ currentNeighborDistance 4879 
+ currentLabel Omsk 
+
+ *********
+------ closestNeighbor Omsk ------
+neighborWeight 275 
+ currentDistance 4879 
+ currentDistance - neighborWeight 4604 
+ currentNeighborDistance 4604 
+ currentLabel Ishim, Tyumen Oblast 
+
+ *********
+neighborWeight 391 
+ currentDistance 4879 
+ currentDistance - neighborWeight 4488 
+ currentNeighborDistance 5270 
+ currentLabel Pavlodar 
+
+ *********
+------ closestNeighbor Ishim, Tyumen Oblast ------
+neighborWeight 275 
+ currentDistance 4604 
+ currentDistance - neighborWeight 4329 
+ currentNeighborDistance 4879 
+ currentLabel Omsk 
+
+ *********
+neighborWeight 569 
+ currentDistance 4604 
+ currentDistance - neighborWeight 4035 
+ currentNeighborDistance 5173 
+ currentLabel Nur-Sultan 
+
+ *********
+neighborWeight 271 
+ currentDistance 4604 
+ currentDistance - neighborWeight 4333 
+ currentNeighborDistance 4333 
+ currentLabel Kurgan, Kurgan Oblast 
+
+ *********
+------ closestNeighbor Kurgan, Kurgan Oblast ------
+neighborWeight 271 
+ currentDistance 4333 
+ currentDistance - neighborWeight 4062 
+ currentNeighborDistance 4604 
+ currentLabel Ishim, Tyumen Oblast 
+
+ *********
+neighborWeight 255 
+ currentDistance 4333 
+ currentDistance - neighborWeight 4078 
+ currentNeighborDistance 4078 
+ currentLabel Chelyabinsk 
+
+ *********
+------ closestNeighbor Chelyabinsk ------
+neighborWeight 209 
+ currentDistance 4078 
+ currentDistance - neighborWeight 3869 
+ currentNeighborDistance 3869 
+ currentLabel Ufa 
+
+ *********
+neighborWeight 249 
+ currentDistance 4078 
+ currentDistance - neighborWeight 3829 
+ currentNeighborDistance 4327 
+ currentLabel Kostanay 
+
+ *********
+neighborWeight 255 
+ currentDistance 4078 
+ currentDistance - neighborWeight 3823 
+ currentNeighborDistance 4333 
+ currentLabel Kurgan, Kurgan Oblast 
+
+ *********
+------ closestNeighbor Ufa ------
+neighborWeight 364 
+ currentDistance 3869 
+ currentDistance - neighborWeight 3505 
+ currentNeighborDistance 3505 
+ currentLabel Samara, Russia 
+
+ *********
+neighborWeight 209 
+ currentDistance 3869 
+ currentDistance - neighborWeight 3660 
+ currentNeighborDistance 4078 
+ currentLabel Chelyabinsk 
+
+ *********
+------ closestNeighbor Samara, Russia ------
+neighborWeight 627 
+ currentDistance 3505 
+ currentDistance - neighborWeight 2878 
+ currentNeighborDistance 2878 
+ currentLabel X: E22 x E30 (0) 
+
+ *********
+neighborWeight 364 
+ currentDistance 3505 
+ currentDistance - neighborWeight 3141 
+ currentNeighborDistance 3869 
+ currentLabel Ufa 
+
+ *********
+neighborWeight 1017 
+ currentDistance 3505 
+ currentDistance - neighborWeight 2488 
+ currentNeighborDistance 3207 
+ currentLabel Oral, Kazakhstan 
+
+ *********
+------ closestNeighbor X: E22 x E30 (0) ------
+neighborWeight 627 
+ currentDistance 2878 
+ currentDistance - neighborWeight 2251 
+ currentNeighborDistance 3505 
+ currentLabel Samara, Russia 
+
+ *********
+neighborWeight 445 
+ currentDistance 2878 
+ currentDistance - neighborWeight 2433 
+ currentNeighborDistance 2615 
+ currentLabel Penza 
+
+ *********
+neighborWeight 112 
+ currentDistance 2878 
+ currentDistance - neighborWeight 2766 
+ currentNeighborDistance 2990 
+ currentLabel Yelabuga 
+
+ *********
+neighborWeight 75 
+ currentDistance 2878 
+ currentDistance - neighborWeight 2803 
+ currentNeighborDistance 2803 
+ currentLabel Kazan 
+
+ *********
+------ closestNeighbor Kazan ------
+neighborWeight 75 
+ currentDistance 2803 
+ currentDistance - neighborWeight 2728 
+ currentNeighborDistance 2878 
+ currentLabel X: E22 x E30 (0) 
+
+ *********
+neighborWeight 335 
+ currentDistance 2803 
+ currentDistance - neighborWeight 2468 
+ currentNeighborDistance 2468 
+ currentLabel Nizhny Novgorod 
+
+ *********
+------ closestNeighbor Nizhny Novgorod ------
+neighborWeight 335 
+ currentDistance 2468 
+ currentDistance - neighborWeight 2133 
+ currentNeighborDistance 2803 
+ currentLabel Kazan 
+
+ *********
+neighborWeight 210 
+ currentDistance 2468 
+ currentDistance - neighborWeight 2258 
+ currentNeighborDistance 2258 
+ currentLabel Vladimir, Russia 
+
+ *********
+------ closestNeighbor Vladimir, Russia ------
+neighborWeight 207 
+ currentDistance 2258 
+ currentDistance - neighborWeight 2051 
+ currentNeighborDistance 2051 
+ currentLabel Moscow 
+
+ *********
+neighborWeight 210 
+ currentDistance 2258 
+ currentDistance - neighborWeight 2048 
+ currentNeighborDistance 2468 
+ currentLabel Nizhny Novgorod 
+
+ *********
+------ closestNeighbor Moscow ------
+neighborWeight 648 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1403 
+ currentNeighborDistance 2022 
+ currentLabel Saint Petersburg 
+
+ *********
+neighborWeight 434 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1617 
+ currentNeighborDistance 1890 
+ currentLabel Velikiye Luki 
+
+ *********
+neighborWeight 207 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1844 
+ currentNeighborDistance 2258 
+ currentLabel Vladimir, Russia 
+
+ *********
+neighborWeight 367 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1684 
+ currentNeighborDistance 2044 
+ currentLabel Voronezh 
+
+ *********
+neighborWeight 182 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1869 
+ currentNeighborDistance 2233 
+ currentLabel Ryazan 
+
+ *********
+neighborWeight 407 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1644 
+ currentNeighborDistance 2458 
+ currentLabel Tambov 
+
+ *********
+neighborWeight 287 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1764 
+ currentNeighborDistance 2338 
+ currentLabel Yaroslavl 
+
+ *********
+neighborWeight 145 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1906 
+ currentNeighborDistance 2104 
+ currentLabel Tula, Russia 
+
+ *********
+neighborWeight 345 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1706 
+ currentNeighborDistance 1706 
+ currentLabel Smolensk 
+
+ *********
+neighborWeight 128 
+ currentDistance 2051 
+ currentDistance - neighborWeight 1923 
+ currentNeighborDistance 2009 
+ currentLabel Kaluga 
+
+ *********
+------ closestNeighbor Smolensk ------
+neighborWeight 137 
+ currentDistance 1706 
+ currentDistance - neighborWeight 1569 
+ currentNeighborDistance 1569 
+ currentLabel X: E30 x E95 (0) 
+
+ *********
+neighborWeight 345 
+ currentDistance 1706 
+ currentDistance - neighborWeight 1361 
+ currentNeighborDistance 2051 
+ currentLabel Moscow 
+
+ *********
+------ closestNeighbor X: E30 x E95 (0) ------
+neighborWeight 235 
+ currentDistance 1569 
+ currentDistance - neighborWeight 1334 
+ currentNeighborDistance 1796 
+ currentLabel X: E22 x E95 (0) 
+
+ *********
+neighborWeight 229 
+ currentDistance 1569 
+ currentDistance - neighborWeight 1340 
+ currentNeighborDistance 1590 
+ currentLabel Gomel 
+
+ *********
+neighborWeight 137 
+ currentDistance 1569 
+ currentDistance - neighborWeight 1432 
+ currentNeighborDistance 1706 
+ currentLabel Smolensk 
+
+ *********
+neighborWeight 172 
+ currentDistance 1569 
+ currentDistance - neighborWeight 1397 
+ currentNeighborDistance 1397 
+ currentLabel Minsk 
+
+ *********
+------ closestNeighbor Minsk ------
+neighborWeight 172 
+ currentDistance 1397 
+ currentDistance - neighborWeight 1225 
+ currentNeighborDistance 1569 
+ currentLabel X: E30 x E95 (0) 
+
+ *********
+neighborWeight 150 
+ currentDistance 1397 
+ currentDistance - neighborWeight 1247 
+ currentNeighborDistance 1247 
+ currentLabel X: E85 x E30 (0) 
+
+ *********
+neighborWeight 169 
+ currentDistance 1397 
+ currentDistance - neighborWeight 1228 
+ currentNeighborDistance 1332 
+ currentLabel Vilnius 
+
+ *********
+------ closestNeighbor X: E85 x E30 (0) ------
+neighborWeight 150 
+ currentDistance 1247 
+ currentDistance - neighborWeight 1097 
+ currentNeighborDistance 1397 
+ currentLabel Minsk 
+
+ *********
+neighborWeight 98 
+ currentDistance 1247 
+ currentDistance - neighborWeight 1149 
+ currentNeighborDistance 1149 
+ currentLabel Brest, Belarus 
+
+ *********
+neighborWeight 74 
+ currentDistance 1247 
+ currentDistance - neighborWeight 1173 
+ currentNeighborDistance 1321 
+ currentLabel Slonim 
+
+ *********
+neighborWeight 17 
+ currentDistance 1247 
+ currentDistance - neighborWeight 1230 
+ currentNeighborDistance 1264 
+ currentLabel Lida 
+
+ *********
+------ closestNeighbor Brest, Belarus ------
+neighborWeight 98 
+ currentDistance 1149 
+ currentDistance - neighborWeight 1051 
+ currentNeighborDistance 1247 
+ currentLabel X: E85 x E30 (0) 
+
+ *********
+neighborWeight 245 
+ currentDistance 1149 
+ currentDistance - neighborWeight 904 
+ currentNeighborDistance 850 
+ currentLabel Warsaw 
+
+ *********
+------ closestNeighbor nil ------
+"There is no path"
 clj꞉dijkstra-2.core꞉> 

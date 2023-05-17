@@ -65,15 +65,13 @@
       (let [neighbor-label (:label neighbor)
             neighbor-vertex (get @(:verticies graph) neighbor-label)
             neighbor-distance @(:distance neighbor-vertex)
-            neighbor-weight (:weight neighbor)]
+            neighbor-weight (+ (:weight neighbor) distance)]
         (if (= neighbor-distance ##Inf)
           (dosync
-           (ref-set (:distance neighbor-vertex)
-                    (+ distance neighbor-weight)))
+           (ref-set (:distance neighbor-vertex) neighbor-weight))
           (dosync
            (when (> neighbor-distance neighbor-weight)
-             (ref-set (:distance neighbor-vertex)
-                      (+ distance neighbor-weight)))))))))
+             (ref-set (:distance neighbor-vertex) neighbor-weight))))))))
 
 (defn graph-bfs! [graph start]
   (dosync
@@ -104,12 +102,13 @@
               isMoveValid (=
                            (- currentDistance neighborWeight) currentNeighborDistance)]
           (println "neighborWeight" neighborWeight "\n"
+                   "currentDistance" currentDistance "\n"
                    "currentDistance - neighborWeight"
                    (- currentDistance neighborWeight) "\n"
                    "currentNeighborDistance" currentNeighborDistance "\n"
-          "currentLabel" currentLabel "\n\n" "*********") 
+                   "currentLabel" currentLabel "\n\n" "*********")
 
-          (if (and (< currentNeighborDistance best-distance) isMoveValid) 
+          (if (and (< currentNeighborDistance best-distance) isMoveValid)
             (recur (rest neighbors) currentNeighborDistance currentLabel)
             (recur (rest neighbors) best-distance best-label)))))))
 
@@ -125,6 +124,15 @@
             (recur closestNeighbor
                    (conj places closestNeighbor)))))))
 
-(get @(:verticies g) "Belfast")
-(dijsktra-weights "Belfast" "Dublin" g)
+(get @(:verticies g) "Brest, Belarus")
 
+(defn print-distance
+  [label]
+  (println "Distance of" label "is " @(:distance (get @(:verticies g) label))
+))
+
+(get @(:verticies g) "X: E85 x E30 (0)")
+(print-distance "X: E85 x E30 (0)")
+
+(dijsktra-weights "Oskemen" "Prague" g)
+(dijsktra-weights "Brest, Belarus" "Prague" g)
